@@ -8,14 +8,20 @@ jobs:
         steps:
         -   name: Checkout
             uses: actions/checkout@v4
-        -   name: Install cowsay Program
-            run: sudo apt-get install cowsay -y
-        -   name: execute cowsay CMD
-            run: cowsay -f dragon "Run for cover, I am DRAGON Worrier" >> dragon.txt
-        -   name: Test file exists
-            run: grep -i "dragon" dragon.txt 
-        -   name: read file
-            run: cat dragon.txt
         -   name: list files
             run: ls -altr
+        -   name: Execute shell script
+            run: |
+                chmod +x ascii-script.sh
+                ./ascii-script.sh
+        # -   name: Install cowsay Program
+        #     run: sudo apt-get install cowsay -y
+        # -   name: execute cowsay CMD
+        #     run: cowsay -f dragon "Run for cover, I am DRAGON Worrier" >> dragon.txt
+        # -   name: Test file exists
+        #     run: grep -i "dragon" dragon.txt 
+        # -   name: read file
+        #     run: cat dragon.txt
+        # -   name: list files
+        #     run: ls -altr
             
