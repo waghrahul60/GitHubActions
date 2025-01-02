@@ -15,3 +15,11 @@ one job failed status of entire workflow is fail
 we can add option to ignore some images or operating systems.
 fail-fast value is true by default
 
+# Workflow context 
+
+[context info](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs)
+
+# using expressions we can used context veriables.
+
+[expressions](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/evaluate-expressions-in-workflows-and-actions)
+
